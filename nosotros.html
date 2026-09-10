@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nosotros — CSI Servicios Eléctricos y Refrigeración</title>
+    <meta name="description" content="Conoce más sobre CSI, empresa especializada en servicios, instalaciones y mantenimiento eléctrico y de refrigeración." />
+
+    <!-- Tailwind CSS v4 (Play CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+        @theme { --font-sans: "Helvetica Neue", Arial, "Segoe UI", system-ui, sans-serif; /* Paleta CSI */ --color-csi: #ff6d00; /* Naranja principal */ --color-csi-dark: #e65c00; --color-csi-blue: #005caf; /* Azul enlaces */ --color-ink: #121212; --color-deep:
+        #000000; --color-mid: #222222; --color-soft: #666666; --color-faint: #999999; } body { font-family: var(--font-sans); line-height: 1.6; } @media (prefers-reduced-motion:
+        reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; } }
+    </style>
+</head>
+
+<body class="bg-white text-ink antialiased">
+
+    <!-- ============ NAVBAR ============ -->
+    <header class="sticky top-0 z-50 border-b border-white/10 bg-deep/95 text-white backdrop-blur-md">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-3" aria-label="CSI Servicios Eléctricos y Refrigeración Inicio">
+                <img src="assets/logo-csi-transparente.png" alt="Logotipo CSI" class="h-14 w-auto" />
+            </a>
+
+            <!-- Navegación escritorio -->
+            <ul class="hidden items-center gap-8 text-base font-semibold lg:flex">
+                <li><a href="index.html#inicio" class="group relative transition-colors duration-300 hover:text-csi">Inicio<span class="absolute -bottom-1.5 left-0 h-0.5 w-0 bg-csi transition-all duration-300 group-hover:w-full"></span></a></li>
+                <li><a href="index.html#servicios" class="group relative transition-colors duration-300 hover:text-csi">Servicios<span class="absolute -bottom-1.5 left-0 h-0.5 w-0 bg-csi transition-all duration-300 group-hover:w-full"></span></a></li>
+                <li><a href="nosotros.html" class="group relative text-csi transition-colors duration-300 hover:text-csi">Nosotros<span class="absolute -bottom-1.5 left-0 h-0.5 w-full bg-csi"></span></a></li>
+                <li><a href="index.html#proyectos" class="group relative transition-colors duration-300 hover:text-csi">Proyectos<span class="absolute -bottom-1.5 left-0 h-0.5 w-0 bg-csi transition-all duration-300 group-hover:w-full"></span></a></li>
+                <li><a href="index.html#contacto" class="group relative transition-colors duration-300 hover:text-csi">Contacto<span class="absolute -bottom-1.5 left-0 h-0.5 w-0 bg-csi transition-all duration-300 group-hover:w-full"></span></a></li>
+            </ul>
+
+            <div class="flex items-center gap-4">
+                <a href="tel:+18294692903" class="hidden items-center gap-2 text-sm font-semibold text-white/80 transition-colors duration-300 hover:text-csi md:flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                    </svg>
+                    829-469-2903
+                </a>
+                <a href="index.html#contacto" class="hidden rounded-full bg-csi px-5 py-2 text-sm font-semibold text-white transition-colors duration-300 hover:bg-csi-dark sm:block">
+          Cotiza Ahora
+        </a>
+                <button id="menu-btn" class="grid h-10 w-10 place-items-center rounded ring-1 ring-white/20 lg:hidden" aria-label="Abrir menú" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-6 w-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" />
+          </svg>
+        </button>
+            </div>
+        </nav>
+
+        <!-- Menú móvil -->
+        <div id="mobile-menu" class="hidden bg-deep lg:hidden">
+            <ul class="space-y-1 px-6 pb-6 pt-2 text-base font-medium">
+                <li><a href="index.html#inicio" class="block border-b border-white/10 py-3 hover:text-csi">Inicio</a></li>
+                <li><a href="index.html#servicios" class="block border-b border-white/10 py-3 hover:text-csi">Servicios</a></li>
+                <li><a href="nosotros.html" class="block border-b border-white/10 py-3 text-csi">Nosotros</a></li>
+                <li><a href="index.html#proyectos" class="block border-b border-white/10 py-3 hover:text-csi">Proyectos</a></li>
+                <li><a href="index.html#contacto" class="block py-3 hover:text-csi">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ============ BANNER NOSOTROS ============ -->
+        <section class="relative flex min-h-[45vh] items-center overflow-hidden bg-deep text-white">
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url('assets/imagen2.jpg')"></div>
+            <div class="relative z-10 mx-auto w-full max-w-7xl px-6 py-20">
+                <p class="text-sm font-bold uppercase tracking-[0.25em] text-csi">Acerca de nosotros</p>
+                <h1 class="mt-4 text-4xl font-light uppercase leading-tight tracking-tight md:text-6xl">
+                    Carmish Soluciones de Ingeniería
+                </h1>
+                <p class="mt-4 max-w-2xl text-base text-white/80 md:text-lg">
+                    Soluciones profesionales de instalaciones eléctricas y sistemas de refrigeración.
+                </p>
+            </div>
+        </section>
+
+        <!-- ============ SOBRE NOSOTROS ============ -->
+        <section id="nosotros" class="py-20 md:py-28">
+            <div class="mx-auto grid max-w-7xl items-center gap-12 px-6 md:grid-cols-2">
+                <div>
+                    <p class="text-sm font-bold uppercase tracking-[0.25em] text-csi">Sobre nosotros</p>
+                    <h2 class="mt-4 text-4xl font-extrabold uppercase leading-tight tracking-tight md:text-5xl">
+                        Tu proyecto está en buenas manos.
+                    </h2>
+                    <p class="mt-6 leading-relaxed text-soft">
+                        CSI es una empresa especializada en servicios, instalaciones y mantenimiento. Nuestra misión en el campo de la ingeniería es proporcionar a nuestros clientes las soluciones más efectivas y las ideas más innovadoras para sus negocios y proyectos, manteniendo siempre la excelencia en la calidad de nuestros servicios. Para lograrlo, ofrecemos una amplia gama de servicios dentro de nuestro portafolio.
+                    </p>
+                    <p class="mt-4 leading-relaxed text-soft">
+                        En nuestro programa de mantenimiento e igualas, trabajamos con indicadores que forman parte de un proceso estratégico. Este proceso se inicia con la definición de objetivos claros y se respalda con planes de acción meticulosamente diseñados. Además, contamos con un departamento especializado en proyectos de gestión integral que abarca desde cálculos precisos hasta diseños de sistemas e instalaciones de equipos eléctricos y mecánicos.
+                    </p>
+                    <p class="mt-4 leading-relaxed text-soft">
+                        En CSI, estamos comprometidos con la excelencia en cada paso de nuestros servicios, garantizando la satisfacción y el éxito de nuestros clientes.
+                    </p>
+                    <div class="mt-8 grid grid-cols-3 gap-4">
+                        <div>
+                            <p class="text-3xl font-extrabold text-csi">25+</p>
+                            <p class="text-sm text-soft">Años de experiencia</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-extrabold text-csi">1k+</p>
+                            <p class="text-sm text-soft">Proyectos completados</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-extrabold text-csi">100%</p>
+                            <p class="text-sm text-soft">Clientes satisfechos</p>
+                        </div>
+                    </div>
+                    <a href="index.html#contacto" class="mt-10 inline-flex items-center gap-3 font-semibold text-csi transition-colors duration-300 hover:text-csi-dark">
+            Cotiza con nosotros
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="h-5 w-5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+            </svg>
+          </a>
+                </div>
+                <div class="overflow-hidden rounded-md shadow-xl">
+                    <img src="assets/imagen1.jpg" alt="Nuestro equipo de trabajo" class="h-full w-full object-cover" loading="lazy" />
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ MISIÓN / VISIÓN / VALORES ============ -->
+        <section class="bg-white py-20 md:py-28">
+            <div class="mx-auto max-w-6xl px-6">
+                <div class="grid gap-10 md:grid-cols-2">
+                    <div class="rounded-xl border border-gray-200 bg-[#F2F2F2] p-8">
+                        <p class="text-sm font-bold uppercase tracking-[0.25em] text-csi">Misión</p>
+                        <p class="mt-4 leading-relaxed text-soft">
+                            Nuestra misión es satisfacer de manera efectiva las necesidades de nuestros clientes, ofreciendo soluciones de alta calidad en un mercado cada vez más competitivo.
+                        </p>
+                    </div>
+                    <div class="rounded-xl border border-gray-200 bg-[#F2F2F2] p-8">
+                        <p class="text-sm font-bold uppercase tracking-[0.25em] text-csi">Visión</p>
+                        <p class="mt-4 leading-relaxed text-soft">
+                            Aspiramos a convertirnos en una empresa líder en el país en el campo de la ingeniería, generando propuestas de calidad que superen las expectativas de nuestros clientes.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-10 rounded-xl border border-gray-200 bg-[#F2F2F2] p-8 md:p-10">
+                    <p class="text-sm font-bold uppercase tracking-[0.25em] text-csi">Valores</p>
+                    <ul class="mt-4 space-y-3 leading-relaxed text-soft">
+                        <li><span class="font-bold text-ink">Integridad:</span> Nos guiamos por la transparencia y la responsabilidad en cada acción.</li>
+                        <li><span class="font-bold text-ink">Innovación:</span> Buscamos constantemente nuevas formas de trabajo y soluciones.</li>
+                        <li><span class="font-bold text-ink">Calidad:</span> Nos esforzamos por alcanzar la excelencia en todo lo que hacemos.</li>
+                        <li><span class="font-bold text-ink">Dedicación:</span> Trabajamos con compromiso y pasión, poniendo nuestro corazón y mente en cada proyecto.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ POR QUÉ ELEGIRNOS ============ -->
+        <section class="bg-[#F2F2F2] py-20 md:py-28">
+            <div class="mx-auto max-w-6xl px-6">
+                <div class="text-center">
+                    <p class="text-sm font-bold uppercase tracking-[0.25em] text-csi">Nuestro compromiso</p>
+                    <h2 class="mt-4 text-4xl font-extrabold uppercase tracking-tight md:text-5xl">Por qué elegirnos</h2>
+                </div>
+                <div class="mt-14 grid gap-8 md:grid-cols-3">
+                    <div class="rounded-xl border border-gray-200 bg-white p-8 text-center shadow-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="mx-auto h-12 w-12 text-csi"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                        <h3 class="mt-4 text-xl font-bold uppercase tracking-tight">Experiencia</h3>
+                        <p class="mt-3 text-sm leading-relaxed text-soft">
+                            Personal certificado y experiencia comprobada en el sector eléctrico y de refrigeración.
+                        </p>
+                    </div>
+                    <div class="rounded-xl border border-gray-200 bg-white p-8 text-center shadow-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="mx-auto h-12 w-12 text-csi"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" /></svg>
+                        <h3 class="mt-4 text-xl font-bold uppercase tracking-tight">Innovación</h3>
+                        <p class="mt-3 text-sm leading-relaxed text-soft">
+                            Soluciones efectivas y las ideas más innovadoras para tus negocios y proyectos.
+                        </p>
+                    </div>
+                    <div class="rounded-xl border border-gray-200 bg-white p-8 text-center shadow-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="mx-auto h-12 w-12 text-csi"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        <h3 class="mt-4 text-xl font-bold uppercase tracking-tight">Excelencia</h3>
+                        <p class="mt-3 text-sm leading-relaxed text-soft">
+                            Comprometidos con la calidad en cada paso, garantizando tu satisfacción y éxito.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="bg-deep pt-16 text-sm text-white/70">
+        <div class="mx-auto max-w-7xl px-6">
+            <div class="grid gap-10 md:grid-cols-4">
+                <div class="md:col-span-1">
+                    <img src="assets/logo-csi-transparente.png" alt="CSI" class="h-16 w-auto" />
+                    <p class="mt-4 leading-relaxed text-white/50">
+                        Servicios eléctricos y de refrigeración con la más alta calidad y profesionalismo.
+                    </p>
+                </div>
+                <div>
+                    <p class="font-bold uppercase tracking-wide text-white">Servicios</p>
+                    <ul class="mt-3 space-y-2">
+                        <li><a href="index.html#servicios" class="transition-colors duration-300 hover:text-csi">Instalaciones eléctricas</a></li>
+                        <li><a href="index.html#servicios" class="transition-colors duration-300 hover:text-csi">Sistemas de refrigeración</a></li>
+                        <li><a href="index.html#servicios" class="transition-colors duration-300 hover:text-csi">Mantenimiento</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold uppercase tracking-wide text-white">Empresa</p>
+                    <ul class="mt-3 space-y-2">
+                        <li><a href="nosotros.html" class="text-csi transition-colors duration-300 hover:text-csi">Nosotros</a></li>
+                        <li><a href="index.html#proyectos" class="transition-colors duration-300 hover:text-csi">Proyectos</a></li>
+                        <li><a href="index.html#contacto" class="transition-colors duration-300 hover:text-csi">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold uppercase tracking-wide text-white">Contacto</p>
+                    <ul class="mt-3 space-y-2">
+                        <li><a href="tel:+18294692903" class="transition-colors duration-300 hover:text-csi">829-469-2903</a></li>
+                        <li><a href="mailto:info.carmish@carmishcsi.com" class="transition-colors duration-300 hover:text-csi">info.carmish@carmishcsi.com</a></li>
+                        <li><a href="https://www.google.com/maps/search/?api=1&query=Calle+Padre+Billini+703+Ciudad+Nueva+Santo+Domingo" target="_blank" rel="noopener" class="transition-colors duration-300 hover:text-csi">C/ Padre Billini, #703, Sq. Las Carreras, Ciudad Nueva, D.N.</a></li>
+                        <li class="text-white/50">Servicio de emergencia 24/7</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold uppercase tracking-wide text-white">Redes Sociales</p>
+                    <ul class="mt-3 space-y-3">
+                        <li>
+                            <a href="https://wa.me/18294692903" target="_blank" rel="noopener" class="flex items-center gap-2 transition-colors duration-300 hover:text-csi">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 text-[#25D366]"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.83 14.13c-.24.68-1.4 1.31-1.93 1.35-.49.04-1.11.24-3.72-.77-3.14-1.23-5.14-4.13-5.3-4.32-.15-.19-1.26-1.68-1.26-3.2 0-1.53.8-2.28 1.08-2.59.28-.31.61-.39.81-.39.2 0 .41 0 .59.01.19.01.44-.07.69.53.25.61.86 2.12.93 2.27.08.15.13.33.03.53-.1.2-.15.32-.3.5-.15.18-.32.4-.45.54-.15.15-.31.31-.13.61.18.3.8 1.32 1.72 2.14 1.19 1.05 2.19 1.38 2.5 1.53.31.15.49.13.67-.08.18-.2.77-.9.98-1.21.2-.31.41-.26.69-.15.28.1 1.79.84 2.1.99.31.15.51.23.59.35.07.13.07.72-.17 1.4z"/></svg>
+                                829-469-2903
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/18094201234" target="_blank" rel="noopener" class="flex items-center gap-2 transition-colors duration-300 hover:text-csi">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 text-[#25D366]"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.83 14.13c-.24.68-1.4 1.31-1.93 1.35-.49.04-1.11.24-3.72-.77-3.14-1.23-5.14-4.13-5.3-4.32-.15-.19-1.26-1.68-1.26-3.2 0-1.53.8-2.28 1.08-2.59.28-.31.61-.39.81-.39.2 0 .41 0 .59.01.19.01.44-.07.69.53.25.61.86 2.12.93 2.27.08.15.13.33.03.53-.1.2-.15.32-.3.5-.15.18-.32.4-.45.54-.15.15-.31.31-.13.61.18.3.8 1.32 1.72 2.14 1.19 1.05 2.19 1.38 2.5 1.53.31.15.49.13.67-.08.18-.2.77-.9.98-1.21.2-.31.41-.26.69-.15.28.1 1.79.84 2.1.99.31.15.51.23.59.35.07.13.07.72-.17 1.4z"/></svg>
+                                809-420-1234
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 border-t border-white/10 py-8 text-xs leading-relaxed text-white/50">
+                <p>Copyright © 2026 CSI Servicios Eléctricos y Refrigeración. Todos los derechos reservados.</p>
+                <p class="mt-1">CSI es un empleador que ofrece igualdad de oportunidades.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Menú móvil
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            const isOpen = mobileMenu.classList.toggle('hidden');
+            menuBtn.setAttribute('aria-expanded', !isOpen);
+        });
+    </script>
+</body>
+
+</html>
